@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 1280px;
+  min-width: 1200px;
   font-family: "PT Sans", Arial sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -15,11 +15,18 @@ a {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  color: #000000;
 }
 
 *:focus {
   outline: none;
-  box-shadow: 0 0 3px 3px rgba(129, 179, 210, 0.8);
+  box-shadow: 0 0 2px 2px rgba(101, 88, 71, 0.98);
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 .visually-hidden {
@@ -30,54 +37,133 @@ a {
   margin: -1px;
 }
 
+/*=============================*/
+/*==Header & navigation==*/
+/*=============================*/
+
 .wrapper {
   width: 1200px;
+  margin: 40px auto;
+  /*background-image: url("/img/texture.png");
+  background-repeat: repeat;*/
+  box-shadow: 0 5px 10px 5px rgba(68, 47, 15, 0.27);
+  border: 1px dotted;
+}
+
+.wrapper-navigation {
+  width: 1200px;
+  height: 56px;
+  margin-top: 40px;
+  background: rgba(247, 210, 117, 0.38);
+
+}
+
+.navigation {
+  position: relative;
+  width: 1100px;
+  margin: auto;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  border: 1px solid burlywood;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
-  background-color: #ffffff;
-  box-shadow: 0 -10px 20px 10px #b8b8b8;
+  padding: 0;
+  min-height: 56px;
+  height: 56px; /*для центрирования в IE по вертикали*/
+  list-style: none;
+  color: #ffffff;
+}
+
+.navigation-list li {
+  min-width: 100px;
+}
+
+.navigation-list li:first-child,
+.navigation-list li:nth-child(2) {
+  text-align: left;
+}
+
+.navigation-list li:nth-child(2) {
+  margin-right: 230px;
+}
+
+.navigation-list li:last-child,
+.navigation-list li:nth-last-child(2) {
+  text-align: right;
+}
+
+.logo-up {
+  position: absolute;
+  top: -25px;
+  left: 495px;
+}
+
+.notarius,
+.notarial-action,
+.documents-licens,
+.our-specialists,
+.main-footer {
+  display: flex;
+  min-height: 300px;
+  border: 1px dotted #333333;
+
+}
+
+
+/*============*/
+/*==Notarius==*/
+/*============*/
+
+.notarius {
+
+
+}
+
+
+/*============*/
+/*==Actions==*/
+/*============*/
+
+.notarial-action {
+
+
+}
+
+
+/*=============*/
+/*==Documents==*/
+/*=============*/
+
+.documents-licens {
+
+
+}
+/*===============*/
+/*==Specialists==*/
+/*===============*/
+.our-specialists {
+
+
+}
+
+/*================*/
+/*==Footer & map==*/
+/*================*/
+
+
+.main-footer {
+
 }
 
 
 
-/*=============================*/
-/*==Модальное окно==*/
-/*=============================*/
-
-
-/*=============================*/
-/*== END Модальное окно==*/
-/*=============================*/
 
 
 
-/*=====================================*/
-/*==Списки: инфраструктура, тип жилья==*/
-/*=====================================*/
 
-
-
-/*==========================================*/
-/*== END Списки: инфраструктура, тип жилья==*/
-/*==========================================*/
-
-/*=====================*/
-/*==Стоимость в сутки==*/
-/*=====================*/
-
-
-
-/*==========================*/
-/*== END Стоимость в сутки==*/
-/*==========================*/
-
-
-
-/*===========*/
-/*== Футер ==*/
-/*===========*/
-
-
-
-/*===============*/
-/*== END Футер ==*/
-/*===============*/
