@@ -22,14 +22,15 @@
           <li><a class="navigation-link" href="news.html">новости</a></li>
           <li><a class="navigation-link" href="record.html.html">контакты</a></li>
         </ul>
+        <div class="stamp"></div>
         <img class="logo-up" src="img/logo-up.png" width="100" height="100" alt="Логотип">
       </div>
     </nav>
   </header>
 
   <main>
-    <div class="notarius">
-      <div class="notarius-box centering">
+    <div class="wrapper-darken">
+      <div class="notarius centering">
         <h1>Нотариус</h1>
         <h2>Перевалова И.В.</h2>
         <p>Обеспечение защиты прав и законных интересов граждан и юридических лиц путем совершения
@@ -39,10 +40,10 @@
       </div>
     </div>
 
-    <div class="notarial-action">
-      <div class="centering">
+    <div class="wrapper-lighten">
+      <div class="notarial-action centering">
         <h2>Нотариальные действия</h2>
-        <ul>
+        <ul class="notarial-action-list">
           <li>завещание</li>
           <li>доверенности</li>
           <li>договоры</li>
@@ -55,37 +56,36 @@
       </div>
     </div>
 
-    <div class="documents-licens">
-      <div class="centering">
+    <div class="wrapper-darken">
+      <div class="documents-licens centering">
         <h2>Документы и лицензии</h2>
-        <ul>
-          <li><img class="licenses" src="img/license-1.png" width="60" height="100" alt="Лицензия"></li>
-          <li><img class="licenses" src="img/license-2.png" width="60" height="100" alt="Лицензия"></li>
-          <li><img class="licenses" src="img/license-3.png" width="60" height="100" alt="Лицензия"></li>
-          <li><img class="licenses" src="img/license-4.png" width="60" height="100" alt="Лицензия"></li>
-          <li><img class="licenses" src="img/license-5.png" width="60" height="100" alt="Лицензия"></li>
-          <li><img class="licenses" src="img/license-6.png" width="60" height="100" alt="Лицензия"></li>
-          <li><img class="licenses" src="img/license-7.png" width="60" height="100" alt="Лицензия"></li>
-          <li><img class="licenses" src="img/license-8.png" width="60" height="100" alt="Лицензия"></li>
+        <ul class="documents-licens-list">
+          <li><img class="license" src="img/license-2.jpg" width="60" height="100" alt="Лицензия"></li>
+          <li><img class="license" src="img/license-3.jpg" width="60" height="100" alt="Лицензия"></li>
+          <li><img class="license" src="img/license-4.jpg" width="60" height="100" alt="Лицензия"></li>
+          <li><img class="license" src="img/license-5.jpg" width="60" height="100" alt="Лицензия"></li>
+          <li><img class="license" src="img/license-6.jpg" width="60" height="100" alt="Лицензия"></li>
+          <li><img class="license" src="img/license-7.jpg" width="60" height="100" alt="Лицензия"></li>
+          <li><img class="license" src="img/license-8.jpg" width="60" height="100" alt="Лицензия"></li>
         </ul>
       </div>
     </div>
 
-    <div class="our-specialists">
-      <div class="centering">
+    <div class="wrapper-lighten">
+      <div class="our-specialists centering">
         <h2>Наши специалисты:</h2>
-        <ul>
-          <li class="specialist">
+        <ul class="specialists-list">
+          <li class="specialist-item">
             <img src="img/license-1.png" width="60" height="100" alt="Специалист">
             <h3>ФИО специалиста</h3>
             <p>должность</p>
           </li>
-          <li class="specialist">
+          <li class="specialist-item">
             <img src="img/license-1.png" width="60" height="100" alt="Специалист">
             <h3>ФИО специалиста</h3>
             <p>должность</p>
           </li>
-          <li class="specialist">
+          <li class="specialist-item">
             <img src="img/license-1.png" width="60" height="100" alt="Специалист">
             <h3>ФИО специалиста</h3>
             <p>должность</p>
@@ -95,12 +95,28 @@
     </div>
   </main>
 
-  <footer class="main-footer">
-    <div class="centering">
-      <h2>Контакты</h2>
-      <!--Здесь карта и на ней блок с адресом, телефоном, e-mail-ом-->
-      <p>Нотариус Перевалова И.В.</p>
-      <span>Телефоны конторы</span>
+  <footer class="wrapper-darken">
+    <div class="main-footer centering">
+      <h2 class="visually-hidden">Контакты</h2>
+      <!--div class="map" id="map" width="600" height="400"></div-->
+      <iframe class="map"
+              src="https://yandex.ru/map-widget/v1/?um=mymaps%3Au9-jzcEIlBwi2FvgFheu9SLljg7lyduB&amp;source=constructor"
+              width="600" height="400" frameborder="0"></iframe>
+      <!--img src="img/map.png" alt="Адрес на карте" width="600" height="400"-->
+
+      <div class="contacts">
+        <h3>Время работы:</h3>
+        <ul>
+          <li>понедельник - пятница с 10 до 17 час.</li>
+          <li>перерыв с 13 до 14 час.</li>
+        </ul>
+        <h3>Телефоны:</h3>
+        <ul>
+          <li>(343)357-30-78</li>
+          <li>(343)366-45-70</li>
+        </ul>
+        <p>e-mail: perevalova@npso66.ru</p>
+      </div>
     </div>
   </footer>
   <div class="decor">
@@ -109,6 +125,31 @@
 </div>
 
 <script src="js/main.js"></script>
+<!--script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+</script>
+<script type="text/javascript">
+  ymaps.ready(init);
+  var myMap, myPlacemark;
+
+  function init(){
+    myMap = new ymaps.Map("map", {
+      center: [56.871632, 60.551284],
+      zoom: 16
+    });
+
+    myMap.behaviors.disable('scrollZoom');
+
+    myPlacemark = new ymaps.Placemark([56.871632, 60.551284], {
+      iconCaption: 'улица Бебеля, д.164',
+      balloonContent: 'Нотариус Перевалова И.В.'
+    }, {
+      iconColor: '#fe342c'
+    });
+
+    myMap.geoObjects.add(myPlacemark);
+  }
+</script-->
 
 </body>
 </html>
+
