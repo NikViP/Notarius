@@ -34,8 +34,6 @@ a {
 .wrapper {
   width: 1200px;
   margin: 40px auto;
-  /*background-image: url("/img/texture.png");
-  background-repeat: repeat;*/
   box-shadow: 0 5px 10px 5px rgba(68, 47, 15, 0.27);
   border: 1px dotted;
 }
@@ -48,14 +46,15 @@ a {
 
 .decor {
   width: 1200px;
-  height: 40px;
+  height: 60px;
   background: #572925;
 }
 
 .navigation-list,
 .notarial-action-list,
 .documents-licens-list,
-.specialists-list {
+.specialists-list,
+.contacts-list {
   list-style: none;
 }
 
@@ -128,8 +127,7 @@ a {
 .our-specialists,
 .main-footer {
   display: flex;
-  min-height: 300px;
-  padding: 0;
+  min-height: 350px;
 }
 
 /*============*/
@@ -137,7 +135,7 @@ a {
 /*============*/
 
 .wrapper-darken {
-  background: #7c3c3c;
+  background: #7c3c3c linear-gradient(6deg,  transparent 73%, #572925 27%);
   color: #f2f2f2;
 }
 
@@ -149,14 +147,36 @@ a {
 .notarius {
   flex-direction: column;
   flex-wrap: wrap;
-  height: 350px;
   justify-content: space-around;
-  align-items: center;
+  Width: 900px;
+  height: 350px;
+  text-align: left;
+
+}
+
+.notarius span {
+  margin: 0;
+  padding-top: 20px;
+}
+
+.notarius h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.notarius-name {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 300;
 
 }
 
 .notarius p {
   width: 430px;
+  margin: 0;
+  padding-bottom: 20px;
+  line-height: 24px;
 }
 
 .photo {
@@ -169,16 +189,57 @@ a {
 /*============*/
 
 .notarial-action {
+  display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  height: 350px;
 
 }
 
+.notarial-action-list {
+  list-style: none;
+  text-align: left;
+  padding-left: 100px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.notarial-action-list li {
+  background: url("../img/pencil_min.png")no-repeat;
+  padding-left: 60px;
+}
+
+.notarial-action h2 {
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 30px;
+  font-size: 30px;
+  font-weight: 600;
+
+}
+
+.notarial-action-content {
+  width: 600px;
+  height: 350px;
+  align-self: flex-end;
+  overflow-y: scroll;
+  border: 1px dotted #fe3d1f;
+
+}
 /*=============*/
 /*==Documents==*/
 /*=============*/
 
 .documents-licens {
   flex-direction: column;
+}
+
+.documents-licens h2 {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: 400;
+
 }
 
 .documents-licens-list {
@@ -202,10 +263,19 @@ a {
 }
 
 /*===============*/
-/*==Specialists==*/
+/*==News==*/
 /*===============*/
-.our-specialists {
-  flex-direction: column;
+.news {
+  min-height: 600px;
+
+}
+
+.news h2 {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: 600;
+
 }
 
 /*================*/
@@ -221,15 +291,36 @@ a {
 }
 
 .contacts {
-  width: 100px;
-  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 500px;
   color: #f2f2f2;
-  background: #7c3c3c;
+  background: #7c3c3c linear-gradient(8deg, transparent 73%, #572925 27%);
+}
+
+.contacts h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.contacts-list {
+  margin: 0;
+  padding: 0;
+
+}
+
+.contacts-item {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .rights {
   margin: 0;
-  padding: 15px;
+  padding: 24px;
   font-size: 10px;
   text-transform: initial;
   text-align: left;

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Нотариус Перевалова Ирина Викторовна</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-  <link href="css/normalize.css" rel="stylesheet">
+  <!--link href="css/normalize.css" rel="stylesheet"-->
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -31,8 +31,9 @@
   <main>
     <div class="wrapper-darken">
       <div class="notarius centering">
+        <span>Нотариальная палата Свердловской области</span>
         <h1>Нотариус</h1>
-        <h2>Перевалова И.В.</h2>
+        <div class="notarius-name">Перевалова</br>Ирина Викторовна</div>
         <p>Обеспечение защиты прав и законных интересов граждан и юридических лиц путем совершения
           предусмотренных законодательными актами нотариальных действий<br>от имени Российской Федерации
         </p>
@@ -53,6 +54,7 @@
           <li>наследство</li>
           <li>распоряжение</li>
         </ul>
+        <div class="notarial-action-content"></div>
       </div>
     </div>
 
@@ -72,25 +74,9 @@
     </div>
 
     <div class="wrapper-lighten">
-      <div class="our-specialists centering">
-        <h2>Наши специалисты:</h2>
-        <ul class="specialists-list">
-          <li class="specialist-item">
-            <img src="img/license-1.png" width="60" height="100" alt="Специалист">
-            <h3>ФИО специалиста</h3>
-            <p>должность</p>
-          </li>
-          <li class="specialist-item">
-            <img src="img/license-1.png" width="60" height="100" alt="Специалист">
-            <h3>ФИО специалиста</h3>
-            <p>должность</p>
-          </li>
-          <li class="specialist-item">
-            <img src="img/license-1.png" width="60" height="100" alt="Специалист">
-            <h3>ФИО специалиста</h3>
-            <p>должность</p>
-          </li>
-        </ul>
+      <div class="news centering">
+        <h2>Новости:</h2>
+
       </div>
     </div>
   </main>
@@ -98,24 +84,23 @@
   <footer class="wrapper-darken">
     <div class="main-footer centering">
       <h2 class="visually-hidden">Контакты</h2>
-      <!--div class="map" id="map" width="600" height="400"></div-->
       <iframe class="map"
               src="https://yandex.ru/map-widget/v1/?um=mymaps%3Au9-jzcEIlBwi2FvgFheu9SLljg7lyduB&amp;source=constructor"
-              width="600" height="400" frameborder="0"></iframe>
-      <!--img src="img/map.png" alt="Адрес на карте" width="600" height="400"-->
+              width="600" height="350" frameborder="0"></iframe>
 
       <div class="contacts">
-        <h3>Время работы:</h3>
-        <ul>
-          <li>понедельник - пятница с 10 до 17 час.</li>
-          <li>перерыв с 13 до 14 час.</li>
+        <h2>Время работы:</h2>
+        <ul class="contacts-list">
+          <li class="contacts-item">понедельник - пятница:<br>с 10 до 17 час.</li>
+          <li class="contacts-item">перерыв с 13 до 14 час.</li>
+          <li class="contacts-item">суббота - воскресенье: выходной</li>
         </ul>
-        <h3>Телефоны:</h3>
-        <ul>
-          <li>(343)357-30-78</li>
-          <li>(343)366-45-70</li>
+        <h2>Контакты:</h2>
+        <ul class="contacts-list">
+          <li class="contacts-item">8(343) 357-30-78</li>
+          <li class="contacts-item">8(343) 366-45-70</li>
         </ul>
-        <p>e-mail: perevalova@npso66.ru</p>
+        <span class="contacts-item">e-mail: perevalova@npso66.ru</span>
       </div>
     </div>
   </footer>
@@ -125,30 +110,7 @@
 </div>
 
 <script src="js/main.js"></script>
-<!--script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
-</script>
-<script type="text/javascript">
-  ymaps.ready(init);
-  var myMap, myPlacemark;
 
-  function init(){
-    myMap = new ymaps.Map("map", {
-      center: [56.871632, 60.551284],
-      zoom: 16
-    });
-
-    myMap.behaviors.disable('scrollZoom');
-
-    myPlacemark = new ymaps.Placemark([56.871632, 60.551284], {
-      iconCaption: 'улица Бебеля, д.164',
-      balloonContent: 'Нотариус Перевалова И.В.'
-    }, {
-      iconColor: '#fe342c'
-    });
-
-    myMap.geoObjects.add(myPlacemark);
-  }
-</script-->
 
 </body>
 </html>
