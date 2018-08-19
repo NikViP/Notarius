@@ -53,7 +53,7 @@ a {
 .navigation-list,
 .notarial-action-list,
 .documents-licens-list,
-.specialists-list,
+.news-list,
 .contacts-list {
   list-style: none;
 }
@@ -205,8 +205,9 @@ a {
 }
 
 .notarial-action-list li {
-  background: url("../img/pencil_min.png")no-repeat;
+  /*height: 340px;*/
   padding-left: 60px;
+  background: url("../img/pencil_min.png")no-repeat;
 }
 
 .notarial-action h2 {

@@ -1,8 +1,11 @@
-document.querySelector('.invitation-modal').classList.toggle('invitation-modal-show');
-
-document.querySelector('.button-invitation')
-    .addEventListener('click', function () {
-      document.querySelector('.invitation-modal').classList.toggle('invitation-modal-show')
-    });
+//function tick(){
+//  $(".notarial-action-list li:first").slideUp(function(){
+//    $(this).appendTo($(".notarial-action-list")).slideDown();
+//  });
+//};
+//
+//setInterval(function(){
+//  tick();
+//}, 5000);
 
 
