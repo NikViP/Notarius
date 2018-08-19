@@ -7,6 +7,16 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <!--link href="css/normalize.css" rel="stylesheet"-->
   <link href="css/style.css" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $("a[href^='#']").click(function(){
+        var _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -17,10 +27,10 @@
     <nav class="navigation-menu">
       <div class="centering">
         <ul class="navigation-list">
-          <li><a class="navigation-link" href="#">о нотариусе</a></li>
-          <li><a class="navigation-link" href="documents.html">услуги</a></li>
-          <li><a class="navigation-link" href="news.html">новости</a></li>
-          <li><a class="navigation-link" href="record.html.html">контакты</a></li>
+          <li><a class="navigation-link" href="#нотариус">о нотариусе</a></li>
+          <li><a class="navigation-link" href="#услуги">услуги</a></li>
+          <li><a class="navigation-link" href="#новости">новости</a></li>
+          <li><a class="navigation-link" href="#контакты">контакты</a></li>
         </ul>
         <div class="stamp"></div>
         <img class="logo-up" src="img/logo-up.png" width="100" height="100" alt="Логотип">
@@ -32,7 +42,7 @@
     <div class="wrapper-darken">
       <div class="notarius centering">
         <span>Нотариальная палата Свердловской области</span>
-        <h1>Нотариус</h1>
+        <h1 id="нотариус">Нотариус</h1>
         <div class="notarius-name">Перевалова</br>Ирина Викторовна</div>
         <p>Обеспечение защиты прав и законных интересов граждан и юридических лиц путем совершения
           предусмотренных законодательными актами нотариальных действий<br>от имени Российской Федерации
@@ -43,7 +53,7 @@
 
     <div class="wrapper-lighten">
       <div class="notarial-action centering">
-        <h2>Нотариальные действия</h2>
+        <h2 id="услуги">Нотариальные действия</h2>
         <ul class="notarial-action-list">
           <li>завещание</li>
           <li>доверенности</li>
@@ -75,7 +85,7 @@
 
     <div class="wrapper-lighten">
       <div class="news centering">
-        <h2>Новости:</h2>
+        <h2 id="новости">Новости:</h2>
 
         <ul class="news-list">
           <li>
@@ -113,7 +123,7 @@
               width="600" height="350" frameborder="0"></iframe>
 
       <div class="contacts">
-        <h2>Время работы:</h2>
+        <h2 id="контакты">Время работы:</h2>
         <ul class="contacts-list">
           <li class="contacts-item">понедельник - пятница:<br>с 10 до 17 час.</li>
           <li class="contacts-item">перерыв с 13 до 14 час.</li>
@@ -133,7 +143,7 @@
   </div>
 </div>
 
-<script src="js/main.js"></script>
+<!--script src="js/main.js"></script-->
 
 
 </body>
