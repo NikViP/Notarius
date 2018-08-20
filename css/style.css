@@ -20,7 +20,7 @@ a {
 
 *:focus {
   outline: none;
-  box-shadow: 0 0 2px 2px rgba(101, 88, 71, 0.98);
+  /*box-shadow: 0 0 2px 2px rgba(101, 88, 71, 0.98);*/
 }
 
 .visually-hidden {
@@ -35,13 +35,11 @@ a {
   width: 1200px;
   margin: 40px auto;
   box-shadow: 0 5px 10px 5px rgba(68, 47, 15, 0.27);
-  border: 1px dotted;
 }
 
 .centering {
   width: 1100px;
-  margin: 0 auto;
-  border: 1px dotted #fe3d1f;
+  margin: 0 auto;border: 1px  #fe3d1f;
 }
 
 .decor {
@@ -84,10 +82,6 @@ a {
   color: #333333;
 }
 
-.navigation-list li {
-  min-width: 100px;
-}
-
 .navigation-list li:first-child,
 .navigation-list li:nth-child(2) {
   text-align: left;
@@ -100,6 +94,11 @@ a {
 .navigation-list li:last-child,
 .navigation-list li:nth-last-child(2) {
   text-align: right;
+}
+
+.navigation-list li:hover {
+  border-bottom: 2px solid #7c3c3c;
+  color: #7c3c3c;
 }
 
 .stamp {
@@ -151,7 +150,6 @@ a {
   width: 900px;
   height: 350px;
   text-align: left;
-
 }
 
 .notarius span {
@@ -169,7 +167,6 @@ a {
   margin: 0;
   font-size: 42px;
   font-weight: 300;
-
 }
 
 .notarius p {
@@ -193,7 +190,6 @@ a {
   flex-direction: column;
   flex-wrap: wrap;
   height: 350px;
-
 }
 
 .notarial-action-list {
@@ -201,14 +197,19 @@ a {
   text-align: left;
   padding-left: 100px;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 26px;
 }
 
 .notarial-action-item {
   padding-left: 60px;
   background: url("../img/pencil_min.png") no-repeat;
   cursor: pointer;
+  color: #7c3c3c;
+}
 
+.notarial-action-item:hover {
+  color: #7c3c3c;
+  font-weight: bolder;
 }
 
 .notarial-action h2 {
@@ -217,16 +218,17 @@ a {
   padding-left: 30px;
   font-size: 30px;
   font-weight: 600;
-
 }
 
 .notarial-action-content {
   position: relative;
-  width: 600px;
-  height: 350px;
+  width: 640px;
+  height: 320px;
+  margin-top: 15px;
   align-self: flex-end;
   overflow-y: scroll;
-  border: 1px dotted #fe3d1f;
+  border-left: 5px solid rgba(222, 170, 135, 0.3);
+  border-right: 5px solid rgba(222, 170, 135, 0.3);
 
 }
 
@@ -241,7 +243,6 @@ a {
   padding: 20px;
   text-align: left;
   text-transform: none;
-
 }
 
 .active-doc {
@@ -261,12 +262,10 @@ a {
   padding-top: 20px;
   font-size: 30px;
   font-weight: 400;
-
 }
 
 .documents-licens-list {
   display: flex;
-
 }
 
 .license {
@@ -275,8 +274,6 @@ a {
   height: 170px;
   margin: 10px;
   transition: transform 0.4s;
-  border: 1px dotted;
-
 }
 
 .license:hover {
@@ -286,21 +283,18 @@ a {
 /*===============*/
 /*==News==*/
 /*===============*/
+
 .news {
   margin: 0 auto;
   padding: 0;
   width: 900px;
   min-height: 500px;
-
 }
 
 .news-list {
   margin: 0;
   padding: 0;
-}
-
-.news-list li:last-child {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .news h2 {
@@ -308,13 +302,7 @@ a {
   padding-top: 20px;
   font-size: 30px;
   font-weight: 600;
-
 }
-
-.news-item {
-  /************/
-}
-
 
 .news-item h4 {
   margin: 0 auto;
@@ -322,7 +310,6 @@ a {
   padding-bottom: 10px;
   display: block;
   width: 600px;
-
 }
 
 .news-item p {
@@ -330,10 +317,7 @@ a {
   padding: 0;
   text-align: left;
   text-transform: none;
-
 }
-
-
 
 .news-date {
   display: block;
@@ -342,17 +326,16 @@ a {
   margin-right: 900px;
   margin-top: 20px;
   border-radius: 4px;
-  background-color: rgba(222, 170, 135, 0.51);
+  background-color: rgba(222, 170, 135, 0.3);
   text-transform: uppercase;
   font-weight: bold;
   color: #7c3c3c;
   line-height: 25px;
-
 }
 
 .news-read-more {
   display: block;
-  width: 95px;
+  width: 120px;
   height: 25px;
   margin-right: 900px;
   margin-top: 10px;
@@ -363,6 +346,11 @@ a {
   color: #7c3c3c;
 }
 
+.news-read-more:hover {
+  color: #deaa87;
+  text-transform: uppercase;
+}
+
 .news-page p {
   display: block;
   width: 900px;
@@ -370,15 +358,9 @@ a {
   text-align: left;
 }
 
-
-
 /*================*/
 /*==Footer & map==*/
 /*================*/
-
-.main-footer {
-
-}
 
 .map {
   padding-right: auto;
@@ -388,9 +370,9 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 500px;
+  margin: 20px 0;
+  margin-left: 100px;
+  width: 350px;
   color: #f2f2f2;
   background: #7c3c3c linear-gradient(8deg, transparent 73%, #572925 27%);
 }
@@ -404,7 +386,6 @@ a {
 .contacts-list {
   margin: 0;
   padding: 0;
-
 }
 
 .contacts-item {
@@ -420,9 +401,3 @@ a {
   text-align: left;
   color: #f2f2f2;
 }
-
-
-
-
-
-
