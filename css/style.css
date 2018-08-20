@@ -342,6 +342,13 @@ a {
   color: #7c3c3c;
 }
 
+.news-page p {
+  display: block;
+  width: 900px;
+  margin: 20px auto;
+  text-align: left;
+}
+
 
 
 /*================*/
