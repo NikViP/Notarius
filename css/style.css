@@ -135,7 +135,7 @@ a {
 /*============*/
 
 .wrapper-darken {
-  background: #7c3c3c linear-gradient(6deg,  transparent 73%, #572925 27%);
+  background: #7c3c3c linear-gradient(6deg, transparent 73%, #572925 27%);
   color: #f2f2f2;
 }
 
@@ -148,7 +148,7 @@ a {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
-  Width: 900px;
+  width: 900px;
   height: 350px;
   text-align: left;
 
@@ -207,7 +207,7 @@ a {
 .notarial-action-list li {
   /*height: 340px;*/
   padding-left: 60px;
-  background: url("../img/pencil_min.png")no-repeat;
+  background: url("../img/pencil_min.png") no-repeat;
 }
 
 .notarial-action h2 {
@@ -227,6 +227,7 @@ a {
   border: 1px dotted #fe3d1f;
 
 }
+
 /*=============*/
 /*==Documents==*/
 /*=============*/
@@ -245,7 +246,6 @@ a {
 
 .documents-licens-list {
   display: flex;
-
 
 }
 
@@ -267,8 +267,20 @@ a {
 /*==News==*/
 /*===============*/
 .news {
-  min-height: 600px;
+  margin: 0 auto;
+  padding: 0;
+  width: 900px;
+  min-height: 500px;
 
+}
+
+.news-list {
+  margin: 0;
+  padding: 0;
+}
+
+.news-list li:last-child {
+  margin-bottom: 20px;
 }
 
 .news h2 {
@@ -278,6 +290,59 @@ a {
   font-weight: 600;
 
 }
+
+.news-item {
+  /************/
+}
+
+
+.news-item h4 {
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  width: 600px;
+
+}
+
+.news-item p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-transform: none;
+
+}
+
+
+
+.news-date {
+  display: block;
+  width: 85px;
+  height: 25px;
+  margin-right: 900px;
+  margin-top: 20px;
+  border-radius: 4px;
+  background-color: rgba(222, 170, 135, 0.51);
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #7c3c3c;
+  line-height: 25px;
+
+}
+
+.news-read-more {
+  display: block;
+  width: 95px;
+  height: 25px;
+  margin-right: 900px;
+  margin-top: 10px;
+  text-align: left;
+  text-transform: none;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #7c3c3c;
+}
+
+
 
 /*================*/
 /*==Footer & map==*/
@@ -294,7 +359,7 @@ a {
 .contacts {
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content: space-around;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 500px;
