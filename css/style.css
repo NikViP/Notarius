@@ -34,7 +34,8 @@ a {
 
 .centering {
   width: 1100px;
-  margin: 0 auto;border: 1px  #fe3d1f;
+  margin: 0 auto;
+  border: 1px  #fe3d1f;
 }
 
 .decor {
@@ -51,9 +52,9 @@ a {
   list-style: none;
 }
 
-/*=============================*/
+/*=======================*/
 /*==Header & navigation==*/
-/*=============================*/
+/*=======================*/
 
 .navigation-menu {
   position: relative;
@@ -77,18 +78,23 @@ a {
   color: #333333;
 }
 
-.navigation-list li:first-child,
-.navigation-list li:nth-child(2) {
-  text-align: left;
+.navigation-list a {
+  color: #4E2623;
 }
 
-.navigation-list li:nth-child(2) {
-  margin-right: 230px;
+.navigation-list li {
+  text-align: center;
 }
 
-.navigation-list li:last-child,
-.navigation-list li:nth-last-child(2) {
-  text-align: right;
+.navigation-list li:nth-child(4) {
+  margin-left: -100px;
+}
+
+.interval {
+  display: block;
+  width: 120px;
+  height: 30px;
+  margin-left: 30px;
 }
 
 .navigation-list a:hover {
@@ -145,6 +151,7 @@ a {
   width: 900px;
   height: 350px;
   text-align: left;
+  color: #f4e6c2;
 }
 
 .notarius span {
@@ -190,13 +197,15 @@ a {
 .notarial-action-list {
   list-style: none;
   text-align: left;
-  padding-left: 100px;
+  /*padding-left: 100px;*/
+  padding-left: 0;
   font-size: 18px;
   line-height: 26px;
 }
 
 .notarial-action-item {
   padding-left: 60px;
+  padding-bottom: 10px;
   background: url("../img/pencil_min.png") no-repeat;
   cursor: pointer;
   color: #7c3c3c;
@@ -210,13 +219,14 @@ a {
 .notarial-action h2 {
   margin: 0;
   padding-top: 20px;
-  padding-left: 30px;
+  padding-right: 20px;
   font-size: 30px;
   font-weight: 600;
+  color: #4E2623;
 }
 
 .notarial-action-content {
-  position: relative;
+  /*position: relative;*/
   width: 640px;
   height: 320px;
   margin-top: 15px;
@@ -233,7 +243,7 @@ a {
 }
 
 .notarial-action-doc {
-  position: absolute;
+  /*position: absolute;*/
   display: none;
   padding: 20px;
   text-align: left;
@@ -244,11 +254,11 @@ a {
   display: block;
 }
 
-/*=============*/
-/*==Documents==*/
-/*=============*/
+/*=======================*/
+/*==Documents & License==*/
+/*=======================*/
 
-.documents-licens {
+/*.documents-licens {
   flex-direction: column;
 }
 
@@ -263,7 +273,7 @@ a {
   display: flex;
 }
 
-.license {
+  .license {
   display: block;
   width: 120px;
   height: 170px;
@@ -273,8 +283,156 @@ a {
 
 .license:hover {
   transform: scale(2.5, 2.5);
+}*/
+
+
+/*============*/
+/*==Services==*/
+/*============*/
+
+.services {
+  width: 800px;
+  min-height: 250px;
+  color: #f4e6c2;
 }
 
+.services h2 {
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.services p {
+  text-align: left;
+  /*text-transform: none;*/
+}
+
+.services__form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  min-height: 430px;
+  margin: 0 200px ;
+  padding-bottom: 50px;
+  color: #f4e6c2;
+}
+
+.services__form input, textarea {
+  line-height: ;
+  border: 1px solid #f4e6c2;
+  border-radius: 3px;
+  background-color: #f4e6c2;
+  color: #572925;
+  outline-color: #ff5554;
+}
+
+.services__form input {
+  min-width: 400px;
+  height: 30px;
+  margin: 10px 0;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.services__form input:hover {
+  background-color: rgba(249, 243, 239, 0.9);
+  color: #572925;
+}
+
+.services__form input:focus {
+  background-color: rgba(249, 243, 239, 0.9);
+  color: #572925;
+}
+
+.services__form input[type="file"] {
+  padding: 10px;
+  padding-top: 18px;
+}
+
+.services__form input[type="submit"] {
+  margin-top: 50px;
+  width: 420px;
+  height: 60px;
+  background-color: #f4e6c2;
+  color: #572925;
+  font-weight: bold;
+}
+
+.services__form input[type="submit"]:focus {
+  outline: none;
+}
+
+.services__form input[type="submit"]:active {
+  background-color: #7c3c3c;
+  color: #f4e6c2;
+  outline: none;
+}
+
+
+.services__form textarea {
+  box-sizing: border-box;
+  width: 800px;
+  min-height: 150px;
+  margin: 10px 0;
+  padding: 20px;
+  font-family: "PT Sans", Arial sans-serif;
+}
+
+.services__form textarea:hover {
+  background-color: rgba(249, 243, 239, 0.9);
+  color: #572925;
+}
+
+.services__form textarea:focus {
+  background-color: rgba(249, 243, 239, 0.9);
+  color: #572925;
+}
+
+label {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/*================*/
+/*==Tariffs==*/
+/*================*/
+
+.tariffs {
+  height: 550px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-transform: none;
+  color: #f4e6c2;
+}
+
+.tariffs-table {
+  width: 1100px;
+  border: 1px dotted #f4e6c2;
+  border-collapse: collapse;
+}
+
+.tariffs-table caption {
+  margin: 10px auto;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.tariffs-table th {
+  border: 1px solid #f4e6c2;
+  padding-right: 20px;
+}
+
+.tariffs-table td {
+  padding: 5px 20px;
+  border: 1px dotted #f4e6c2;
+  text-align: left;
+}
+
+.tariffs-table td:first-child{
+  text-align: center;
+}
 /*===============*/
 /*==News==*/
 /*===============*/
@@ -284,6 +442,7 @@ a {
   padding: 0;
   width: 900px;
   min-height: 500px;
+  color: #4E2623;
 }
 
 .news-list {
@@ -351,6 +510,7 @@ a {
   width: 900px;
   margin: 20px auto;
   text-align: left;
+  text-transform: none;
 }
 
 /*================*/
@@ -361,6 +521,7 @@ a {
   display: block;
   width: 600px;
   height: 350px;
+  margin: 20px 0;
   background-image: url("../img/map-background.png");
 }
 
@@ -371,7 +532,7 @@ a {
   margin: 20px 0;
   margin-left: 100px;
   width: 350px;
-  color: #f2f2f2;
+  color: #f4e6c2;
   background: #7c3c3c linear-gradient(6deg, transparent 72%, #572925 27%);
 }
 
@@ -397,5 +558,17 @@ a {
   font-size: 10px;
   text-transform: none;
   text-align: left;
-  color: #f2f2f2;
+  color: #f4e6c2;
 }
+
+/*===============*/
+/*===Scrollbar===*/
+/*===============*/
+
+::-webkit-scrollbar {width: 5px; height: 5px;}
+::-webkit-scrollbar-button {background-color: #a0401a; }
+::-webkit-scrollbar-track {background-color: #deaa87;}
+::-webkit-scrollbar-track-piece {background-color: #f4e6c2;}
+::-webkit-scrollbar-thumb {height: 30px; background-color: #a0401a; border-radius: 5px;}
+::-webkit-scrollbar-corner {background-color: #deaa87;}
+::-webkit-resizer {background-color: #a0401a;}
